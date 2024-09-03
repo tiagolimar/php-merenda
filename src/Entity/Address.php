@@ -15,14 +15,29 @@ class Address
     public string $district;
 
     public string $city;
-    
+
     public string $state;
 
-    public int $x; // -1, 1234, -9871
-
-    public float $y; // -123.23, 0.89
-
-    public bool $z; // true, false
-
-    public array $w; // ['a', 'b']
+    public function full(): string
+    {
+        return "{$this->street}, {$this->number} - {$this->district}, {$this->city}-{$this->state}";
+    }
 }
+
+$enderecoAntigo = new Address(); //instancia
+$enderecoAntigo->street = 'Rua Irlanda';
+$enderecoAntigo->number = '51';
+$enderecoAntigo->district = 'Gererau';
+$enderecoAntigo->city = 'Itaitinga';
+$enderecoAntigo->state = 'CE';
+
+$endereco = new Address(); //instancia
+$endereco->street = 'Rua Barca Velha';
+$endereco->number = '123';
+$endereco->district = 'Quintino Cunha';
+$endereco->city = 'Fortaleza';
+$endereco->state = 'CE';
+
+echo "Antigo: {$enderecoAntigo->full()}".PHP_EOL;
+echo "Novo: {$endereco->full()}".PHP_EOL;
+
