@@ -6,9 +6,12 @@ namespace App\Entity;
 
 class Category 
 {
-    public string $name;
-
     public string $description;
 
     public string $image;
+
+    public function __construct(private string $name) {
+
+    }
+
 }
