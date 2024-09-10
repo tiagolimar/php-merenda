@@ -7,6 +7,14 @@ class ContaBancaria
     public string $agencia;
     private float $saldo = 0;
 
+    public function __construct(
+        string $cliente,
+        string $agencia
+    ) {
+        $this->cliente = $cliente;
+        $this->agencia = $agencia;
+    }
+
     public function getSaldo(): float
     {
         return $this->saldo;
