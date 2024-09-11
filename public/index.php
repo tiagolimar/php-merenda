@@ -1,9 +1,12 @@
 <?php
 
-include '../config/routes.php';
+$routes = include '../config/routes.php';
 
-include '../views/_layouts/head.php';
 
-include '../views/_components/content.php';
+$url = $_SERVER['REQUEST_URI'];
 
-include '../views/_layouts/footer.php';
+
+$controller = $routes[$url][0];
+$method = $routes[$url][1];
+
+(new $controller())->$method();
