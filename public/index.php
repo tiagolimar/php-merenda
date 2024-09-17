@@ -2,12 +2,14 @@
 
 $routes = include '../config/routes.php';
 
+include '../src/Controller/PageErrorController.php';
+
+use App\Controller\PageErrorController;
 
 $url = $_SERVER['REQUEST_URI'];
 
 if (false === isset($routes[$url])) {
-    // Controller / metodo / view
-    echo "<h1>Pagina nao encontrada</h1>";
+    (new PageErrorController())->notFound();
     exit;
 }
 
