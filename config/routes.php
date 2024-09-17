@@ -18,5 +18,6 @@ return [
     '/categorias/adicionar' => [CategoryController::class, 'add'],
     '/categorias/editar' => [CategoryController::class, 'edit'],
     '/categorias/remover' => [CategoryController::class, 'remove'],
+    
 ];
 
