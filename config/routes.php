@@ -2,14 +2,8 @@
 
 declare(strict_types=1);
 
-include '../src/Controller/AbstractController.php';
-include '../src/Controller/ControllerInterface.php';
-include '../src/Controller/CategoryController.php';
-
-use App\Controller\AbstractController;
-use App\Controller\ControllerInterface;
 use App\Controller\CategoryController;
-
+use App\Controller\CustomerController;
 
 return [
     '/' => [CategoryController::class, 'list'],
@@ -18,6 +12,11 @@ return [
     '/categorias/adicionar' => [CategoryController::class, 'add'],
     '/categorias/editar' => [CategoryController::class, 'edit'],
     '/categorias/remover' => [CategoryController::class, 'remove'],
-    
+   
+    '/clientes/listar' => [CustomerController::class, 'list'],
+    '/clientes/adicionar' => [CustomerController::class, 'add'],
+    '/clientes/editar' => [CustomerController::class, 'edit'],
+    '/clientes/remover' => [CustomerController::class, 'remove'],
+   
 ];
 

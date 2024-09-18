@@ -1,8 +1,8 @@
 <?php
 
-$routes = include '../config/routes.php';
+include '../vendor/autoload.php';
 
-include '../src/Controller/PageErrorController.php';
+$routes = include '../config/routes.php';
 
 use App\Controller\PageErrorController;
 
