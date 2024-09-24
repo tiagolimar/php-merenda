@@ -22,7 +22,6 @@ return [
     '/produtos/listar' => [ProductController::class, 'list'],
     '/produtos/adicionar' => [ProductController::class, 'add'],
     '/produtos/editar' => [ProductController::class, 'edit'],
-    '/produtos/remover' => [ProductController::class, 'remove'],    
-
+    '/produtos/remover' => [ProductController::class, 'remove'],
 ];
 
