@@ -63,3 +63,11 @@ classDiagram
         - street
     }
 ```
+
+
+## Como Contribuir
+
+- Passo 1: Faca o clone do repositorio
+```bash
+git clone git@github.com:digitalcollege-classes/php-merenda.git
+```
