@@ -71,3 +71,25 @@ classDiagram
 ```bash
 git clone git@github.com:digitalcollege-classes/php-merenda.git
 ```
+
+
+- passo 2: Voltar pro seu branch principal
+```bash
+git checkout main
+```
+
+- passo 3: Atualizar seu branch principal
+```bash
+git pull origin main
+```
+
+- passo 4: Criar um novo ramo/branch
+```bash
+git checkout -b nome-da-branch
+```
+
+- passo 5: Faz o que tem que fazer
+
+- passo 6: Commitar as mudancas feitas
+
+
