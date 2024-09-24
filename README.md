@@ -1,4 +1,4 @@
-# Gerenciamento de Merendas
+# Gerenciamento do Sistema de Merendas
 
 ```mermaid
 flowchart TD
