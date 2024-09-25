@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 namespace App\Entity;
@@ -17,6 +18,21 @@ class Product
     private float $price;
     
     private bool $available;
+=======
+declare (strict_types=1);
+
+namespace App\Entify;
+
+class Product
+{
+    public string $name;
+    public Category $category;
+    public string $image;
+    public string $description;
+    public float $price;
+    public bool $available;
+    public float $quantity;
+>>>>>>> ac5ba28bd415a92c206fe173498f4b99dc5af8bb
 
     public function getName(): string
     {
@@ -38,6 +54,7 @@ class Product
         $this->category = $category;
     }
 
+<<<<<<< HEAD
     public function getImages(): array
     {
         return $this->images;
@@ -56,6 +73,26 @@ class Product
     public function setQuantity(int $quantity): void
     {
         $this->quantity = $quantity;
+=======
+    public function getImage(): string
+    {
+        return $this->image;
+    }
+
+    public function setImage(string $image): void
+    {
+        $this->image = $image;
+    }
+
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    public function setDescription(string $description): void
+    {
+        $this->description = $description;
+>>>>>>> ac5ba28bd415a92c206fe173498f4b99dc5af8bb
     }
 
     public function getPrice(): float
@@ -77,4 +114,17 @@ class Product
     {
         $this->available = $available;
     }
+<<<<<<< HEAD
+=======
+
+    public function getQuantity(): float
+    {
+        return $this->quantity;
+    }
+
+    public function setQuantity(float $quantity): void
+    {
+        $this->quantity = $quantity;
+    }
+>>>>>>> ac5ba28bd415a92c206fe173498f4b99dc5af8bb
 }

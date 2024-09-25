@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 namespace App\Entity;
@@ -15,6 +16,18 @@ class Category
     ) {
     }
 
+=======
+declare (strict_types=1);
+
+namespace App\Entify;
+
+class Category
+{
+    private string $name;
+    private string $description;
+    private string $image;
+
+>>>>>>> ac5ba28bd415a92c206fe173498f4b99dc5af8bb
     public function getName(): string
     {
         return $this->name;
@@ -44,4 +57,8 @@ class Category
     {
         $this->image = $image;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ac5ba28bd415a92c206fe173498f4b99dc5af8bb

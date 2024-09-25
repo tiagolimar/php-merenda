@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Gerenciamento do Sistema de Merendas
 
 ```mermaid
@@ -93,3 +94,10 @@ git checkout -b nome-da-branch
 - passo 6: Commitar as mudancas feitas
 
 
+=======
+## Estrutura inicial das classes
+
+```mermaid
+
+```
+>>>>>>> ac5ba28bd415a92c206fe173498f4b99dc5af8bb

@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 namespace App\Entity;
@@ -16,6 +17,19 @@ class Address
 
     private string $city;
 
+=======
+declare (strict_types=1);
+
+namespace App\Entify;
+
+class Address
+{
+    private string $street;
+    private string $number;
+    private string $zipcode;
+    private string $district;
+    private string $city;
+>>>>>>> ac5ba28bd415a92c206fe173498f4b99dc5af8bb
     private string $state;
 
     public function full(): string
@@ -43,6 +57,19 @@ class Address
         $this->number = $number;
     }
 
+<<<<<<< HEAD
+=======
+    public function getZipcode(): string
+    {
+        return $this->zipcode;
+    }
+
+    public function setZipcode(string $zipcode): void
+    {
+        $this->zipcode = $zipcode;
+    }
+
+>>>>>>> ac5ba28bd415a92c206fe173498f4b99dc5af8bb
     public function getDistrict(): string
     {
         return $this->district;
@@ -74,3 +101,17 @@ class Address
     }
 }
 
+<<<<<<< HEAD
+=======
+
+$endereco = new Address();
+
+$endereco->street = 'Rua Barca Velha';
+$endereco->number = '123';
+$endereco->zipcode = '60326550';
+$endereco->district = 'Quintino Cunha';
+$endereco->city = 'Fortaleza';
+$endereco->state = 'CE';
+
+echo "Rua: {$endereco->full()}".PHP_EOL;
+>>>>>>> ac5ba28bd415a92c206fe173498f4b99dc5af8bb
